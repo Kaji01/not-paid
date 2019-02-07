@@ -1,8 +1,7 @@
-// Next time use letsdeel.com to make sure you get paid
 (function(){
 	/* change these variables as you wish */
-	var due_date = new Date('2017-02-27');
-	var days_deadline = 60;
+	var due_date = new Date('2019-02-07');
+	var days_deadline = 30;
 	/* stop changing here */
 	
 	var current_date = new Date();
@@ -16,9 +15,8 @@
 			opacity = (opacity < 0) ? 0 : opacity;
 			opacity = (opacity > 1) ? 1 : opacity;
 		if(opacity >= 0 && opacity <= 1) {
-			document.getElementsByTagName("BODY")[0].style.opacity = opacity;
+			jQuery('*').css('opacity',opacity);
 		}
-		
 	}
-	
 })()
+			
